@@ -1,0 +1,36 @@
+{
+  "name": "adsupplies",
+  "version": "1.0.0",
+  "private": true,
+  "description": "adsupplies",
+  "author": "Patrick Whitehouse",
+  "keywords": [
+    "gatsby"
+  ],
+  "scripts": {
+    "develop": "gatsby develop",
+    "start": "gatsby develop",
+    "build": "gatsby build",
+    "serve": "gatsby serve",
+    "clean": "gatsby clean"
+  },
+  "dependencies": {
+    "@emotion/react": "^11.4.1",
+    "@emotion/styled": "^11.3.0",
+    "gatsby": "^3.11.1",
+    "gatsby-plugin-emotion": "^6.12.0",
+    "gatsby-plugin-google-analytics": "^3.12.0",
+    "gatsby-plugin-image": "^1.12.0",
+    "gatsby-plugin-manifest": "^3.12.0",
+    "gatsby-plugin-netlify-cms": "^5.12.0",
+    "gatsby-plugin-react-helmet": "^4.12.0",
+    "gatsby-plugin-sharp": "^3.12.0",
+    "gatsby-plugin-sitemap": "^4.8.0",
+    "gatsby-source-filesystem": "^3.12.0",
+    "gatsby-transformer-sharp": "^3.12.0",
+    "netlify-cms-app": "^2.15.38",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "react-helmet": "^6.1.0"
+  }
+}
