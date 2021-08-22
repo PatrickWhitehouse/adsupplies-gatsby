@@ -8,11 +8,10 @@ const HeroStyled = styled.div`
       display: flex;
       align-items: center;
       justify-content: center; 
-      position: absolute;
       width: 100vw;
-      height: 97vh;
-      top: 0;
-      left: 0;
+      height: 90vh;
+      margin-left: -15px;
+      margin-top: -15px;
       background-image: url(${herobg});
       background-size: cover;
       background-position: center;

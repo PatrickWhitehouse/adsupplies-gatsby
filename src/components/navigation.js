@@ -6,6 +6,10 @@ import logo from "../images/logo.png"
 
 
 const Nav = styled.nav`
+    position: absolute;
+    top: 0;
+    right:0;
+    left:0;
     ul {
         display: flex;
         align-items: center;
