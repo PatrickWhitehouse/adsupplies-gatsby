@@ -16,6 +16,7 @@ const Layout = ({children}) => {
              margin: 0;
              position: relative;
              scroll-behavior: smooth;
+             line-height: 1.5;
          }
          body, main{
             padding: 15px;
