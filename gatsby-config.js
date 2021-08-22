@@ -1,7 +1,8 @@
 module.exports = {
   siteMetadata: {
     siteUrl: "https://www.yourdomain.tld",
-    title: "adsupplies",
+    title: "AD Supplies",
+    tagline: "Waste Management & Recycling for Energy"
   },
   plugins: [
     "gatsby-plugin-netlify-cms",
@@ -10,7 +11,7 @@ module.exports = {
     {
       resolve: "gatsby-plugin-google-analytics",
       options: {
-        trackingId: "",
+        trackingId: "test",
       },
     },
     "gatsby-plugin-react-helmet",
@@ -31,5 +32,13 @@ module.exports = {
       },
       __key: "images",
     },
+    {
+      resolve: 'gatsby-plugin-web-font-loader',
+      options: {
+        google: {
+          families: ['Inter:400,700']
+        }
+      }
+    }
   ],
 };
