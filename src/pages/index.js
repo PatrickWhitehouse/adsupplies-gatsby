@@ -2,11 +2,13 @@ import React from "react"
 import Hero from "../components/hero";
 import Layout from "../components/layout";
 import Navigation from "../components/navigation";
+import Seo from "../components/seo";
 
 
 const IndexPage = () => {
   return (
     <Layout>
+      <Seo title="Home" />
       <Navigation absolute/>
       <Hero title="AD Supplies"/>
       <main>

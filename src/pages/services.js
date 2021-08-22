@@ -1,10 +1,12 @@
 import React from 'react'
 import Layout from '../components/layout'
 import Navigation from '../components/navigation'
+import Seo from '../components/seo'
 
 const Services = () => {
     return (
         <Layout>
+            <Seo title="Services" />
             <Navigation />
             <main>
                 <h1>Our Services</h1>
