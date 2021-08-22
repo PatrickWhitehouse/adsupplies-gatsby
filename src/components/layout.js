@@ -1,6 +1,5 @@
 import React from 'react'
 import { Global, css } from "@emotion/react"
-import Navigation from './navigation'
 
 const Layout = ({children}) => {
     return (
@@ -30,7 +29,6 @@ const Layout = ({children}) => {
          }
 
         `}/>
-            <Navigation />
             {children}
         </>
     )
