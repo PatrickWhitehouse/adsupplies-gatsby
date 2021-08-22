@@ -6,29 +6,37 @@ import logo from "../images/logo.png"
 
 
 const Nav = styled.nav`
-    position: absolute;
-    top: 0;
-    right:0;
-    left:0;
+    position: ${props => props.absolute ? 'absolute' : 'static'};
+    top: ${props => props.absolute ? '15px' : '0'};
+    right:15px;
+    left:15px;
     ul {
         display: flex;
         align-items: center;
-        padding: 15px;
+        margin: 0;
+        padding: 0;
         li {
             display: inline-block;
             list-style: none;
             margin-left: 15px;
+            a{
+                color: ${props => props.absolute ? '#fff' : '#000'};
+                font-weight: 700;
+            }
+            a:hover {
+                text-decoration: underline;
+            }
         }
-        li:first-child{
+        li:first-of-type{
             margin-right: auto;
             margin-left: 0;
         }
     }
 `
 
-const Navigation = () => {
+const Navigation = ({absolute}) => {
     return (
-        <Nav>
+        <Nav absolute={absolute}>
             <ul>
                 <li><Link to="/"><img src={logo} width={90}/></Link></li>
                 <li><Link to="/services">Our Services</Link></li>

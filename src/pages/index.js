@@ -1,11 +1,13 @@
 import React from "react"
 import Hero from "../components/hero";
 import Layout from "../components/layout";
+import Navigation from "../components/navigation";
 
 
 const IndexPage = () => {
   return (
     <Layout>
+      <Navigation absolute/>
       <Hero title="AD Supplies"/>
       <main>
         <h2>Who are we?</h2>
