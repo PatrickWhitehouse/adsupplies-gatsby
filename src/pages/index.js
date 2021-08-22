@@ -3,14 +3,27 @@ import Hero from "../components/hero";
 import Layout from "../components/layout";
 import Navigation from "../components/navigation";
 import Seo from "../components/seo";
+import { useStaticQuery, graphql } from "gatsby"
 
 
 const IndexPage = () => {
+
+  const {site: {siteMetadata}} = useStaticQuery(graphql`
+    query GetMetaDataHome {
+      site {
+        siteMetadata {
+          title
+          tagline
+        }
+      }
+    }
+  `);
+
   return (
     <Layout>
       <Seo title="Home" />
       <Navigation absolute/>
-      <Hero title="AD Supplies"/>
+      <Hero title={siteMetadata.title} tagline={siteMetadata.tagline}/>
       <main>
         <h2>Who are we?</h2>
         <p>AD Supplies aim is to reduce food and associated waste to landfill by making waste management in your business, our business. Our expertise enables us to find ways of effectively recycling your waste streams into biogas and electricity via anaerobic digestion. With over 25 years experience in the food, co-products and the logistics industry, we pride ourselves in our ability to help you reduce cost while improving your company’s green credentials.</p>

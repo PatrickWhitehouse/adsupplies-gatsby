@@ -7,7 +7,8 @@ import herobg from '../images/hero/tanker.jpg'
 const HeroStyled = styled.div`
       display: flex;
       align-items: center;
-      justify-content: center; 
+      justify-content: center;
+      flex-direction: column; 
       width: 100vw;
       height: 90vh;
       margin-left: -15px;
@@ -23,10 +24,16 @@ const Title = styled.h1`
     font-size: 45px;
 `
 
-const Hero = ({title}) => {
+const Tagline = styled.h2`
+    color: #FFF;
+    font-size: 30px;
+`
+
+const Hero = ({title, tagline}) => {
     return (
         <HeroStyled>
             <Title>{title ? title : "No title set"}</Title>
+            <Tagline>{tagline ? tagline : "No tagline"}</Tagline>
         </HeroStyled>
     )
 }
