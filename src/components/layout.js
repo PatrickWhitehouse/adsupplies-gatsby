@@ -20,6 +20,11 @@ const Layout = ({children}) => {
          body, main{
             padding: 15px;
          }
+         main{
+             max-width: 1024px;
+             width: 100%;
+             margin: 0 auto;
+         }
          h1,h2,h3,h4,h5,h6{
              font-weight: 700;
          }
